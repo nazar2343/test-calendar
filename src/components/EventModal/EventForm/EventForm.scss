@@ -1,0 +1,82 @@
+@import "../../../variables";
+
+.event {
+  &__form {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__btn {
+    padding: 5px 15px;
+    font-family: $main-font;
+    border-radius: 3px;
+    border: 1px solid #11069d;
+    background-color: #fff;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:disabled {
+      pointer-events: none;
+      border: 1px solid $light-grey-color;
+    }
+
+    &_delete {
+      width: 30px;
+      height: 30px;
+      color: rgba(44, 105, 166, 0.68);
+      margin-right: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__input {
+    width: 100%;
+    padding-bottom: 2px;
+    font-family: $main-font;
+    color: $grey-color;
+    border: none;
+    border-bottom: 1px solid $grey-color;
+
+    &:focus {
+      outline: none;
+    }
+    &__wrapper {
+      margin: .2rem 0;
+    }
+  }
+
+  &__textarea {
+    height: 60px;
+    resize: none;
+  }
+
+  &__buttons__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}
+
+.input {
+  &__label{
+    font-size: 12px;
+    color: $grey-color;
+  }
+}
+
+.form__input-err {
+  border-bottom: 1px solid $err-color;
+}
+
+.err-message {
+  color: $err-color;
+  min-height: 18px;
+  font-size: 12px;
+}

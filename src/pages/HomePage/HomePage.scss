@@ -1,0 +1,43 @@
+@import "../../variables";
+
+.header {
+  margin: .4rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blue-color;
+  font-weight: 700;
+  font-size: $title-sm;
+
+  &__title {
+    margin: 0 .5rem;
+  }
+}
+
+.add-icon {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $blue-color;
+    border: 1px solid $blue-color;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid $black-color;
+      transition: all .4s ease-in-out;
+    }
+    &:hover .add-icon {
+      fill: $blue-color;
+      transition: all .4s ease-in-out;
+    }
+  }
+}
